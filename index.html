@@ -5,11 +5,15 @@
 	<meta charset="utf-8">
 	<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
 	<style type="text/css">
+		* {
+			margin:0 0 0 0;
+			padding:0 0 0 0;
+		}
 		header {
-			background: #5b7989;
+			background-color: #5b7989;
 			border-radius: 10px 10px 0px 0px;
-			position: fixed;
-			width: 99%;
+			width: 100%;
+			display: inline-block;
 		}
 		h1 {
 			color: white;
@@ -31,6 +35,39 @@
 			display: inline-block;
 			list-style: none;
 		}
+		
+		.primaria {
+			background-color: #82c3a6;
+			width: 100%;
+			
+		}
+		.primariaimg {
+			display: block;
+			margin: auto;
+			padding: 10px 0px 10px 0px;
+		}
+		.col-2 {
+			display: flex;
+			flex-flow: row;
+			justify-content: center;
+			align-content: center;
+			align-items: center;
+			background-color: #d5c75f;
+			width: 100%;
+
+			
+		}
+		.col-2 img{
+			padding: 10px 10px 10px 10px;
+			border: 1px;
+		}
+		.img_izq:hover {
+			transform: rotate(10deg);
+			box-shadow: 2px #82c3a6;
+		.img_der:hover {
+			transform: translateX();
+		}
+
 	</style>
 </head>
 <body>
@@ -42,7 +79,18 @@
 			<li><a href="paisajes.html">Paisajes</a></li>
 			<li><a href="retratos.html">Retratos</a></li>
 		</ul>
-
 	</header>
+	<!-- 2.- imagen centrada-->
+	<div   class="primaria">
+		<img class="primariaimg" src="res/catedral.jpg" width="60%">
+	</div>
+	<!-- 3.- imagenes en 2 columnas-->
+	<div class="col-2">
+		<img src="res/paisajes.jpg" class="img_izq" title="paisajes" width="33%" height="33%">
+
+		<img src="res/retratos.jpg" class="img_der" width="33%" height="33%" >
+	</div>
+
+
 </body>
 </html>
