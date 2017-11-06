@@ -1,96 +1,113 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Comenzando con la fotografía.</title>
-	<meta charset="utf-8">
-	<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
-	<style type="text/css">
-		* {
-			margin:0 0 0 0;
-			padding:0 0 0 0;
-		}
-		header {
-			background-color: #5b7989;
-			border-radius: 10px 10px 0px 0px;
-			width: 100%;
-			display: inline-block;
-		}
-		h1 {
-			color: white;
-			text-shadow: 2px 0px #02010a;
-			float: left;
-			font-family: 'Dancing Script', cursive;
-			padding-left: 15px;
-		}
-		a {
-			color: white;
-			font-family: 'Dancing Script', cursive;
-		}
-		ul {
-			list-style: none;
-			float:right;
-			padding: 15px 30px 15px 30px;
-		}
-		li {
-			display: inline-block;
-			list-style: none;
-		}
-		
-		.primaria {
-			background-color: #82c3a6;
-			width: 100%;
-			
-		}
-		.primariaimg {
-			display: block;
-			margin: auto;
-			padding: 10px 0px 10px 0px;
-		}
-		.col-2 {
-			display: flex;
-			flex-flow: row;
-			justify-content: center;
-			align-content: center;
-			align-items: center;
-			background-color: #d5c75f;
-			width: 100%;
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <link rel="stylesheet" href="res/css/style.css">
+    <title>Inicio</title>
+  </head>
+  <body>
 
-			
-		}
-		.col-2 img{
-			padding: 10px 10px 10px 10px;
-			border: 1px;
-		}
-		.img_izq:hover {
-			transform: rotate(10deg);
-			box-shadow: 2px #82c3a6;
-		.img_der:hover {
-			transform: translateX(5px);
-		}
+    <div class="contenido">
 
-	</style>
-</head>
-<body>
-	<!-- 1.- header -->
-	<header>
-		<h1>Comenzando con la fotografía</h1>
-		<ul class="menu">
-			<li><a href="inicio.html" style="text-decoration:none;">Inicio</a></li>
-			<li><a href="paisajes.html">Paisajes</a></li>
-			<li><a href="retratos.html">Retratos</a></li>
-		</ul>
-	</header>
-	<!-- 2.- imagen centrada-->
-	<div   class="primaria">
-		<img class="primariaimg" src="res/catedral.jpg" width="60%">
-	</div>
-	<!-- 3.- imagenes en 2 columnas-->
-	<div class="col-2">
-		<img src="res/paisajes.jpg" class="img_izq" title="paisajes" width="33%" height="33%">
+      <header>
+        <div id="titulo">
+          <h1>Comenzando con la Fotografia</h1>
+        </div>
 
-		<img src="res/retratos.jpg" class="img_der" width="33%" height="33%" >
-	</div>
+        <div id="menu">
+          <nav>
+            <ul>
+              <li class="selected"><a  href="index.html">Inicio</a></li>
+              <li><a  href="paisajes.html">Paisajes</a></li>
+              <li><a  href="retratos.html">Retratos</a></li>
+            </ul>
+          </nav>
+        </div>
 
+      </header>
 
-</body>
+      <section id="contenedor">
+
+        <div class="contenido1">
+
+          <article>
+            <img src="res/img/catedral.jpg" alt="durmiendo" class="adaptativa-porcentaje">
+          </article>
+
+        </div>
+
+      </section>
+      
+      <section id="contenedor1">
+
+        <section id="contenedor2">
+          <div class="contenido2">
+            <article>
+              <img src="res/img/paisajes.jpg" alt="" class="adaptativa-porcentaje1">
+              <p><a href="paisajes.html">Paisajes</a></p>
+            </article>
+          </div>
+
+          <div class="contenido22">
+            <article>
+              <img src="res/img/retratos.jpg" alt="" class="adaptativa-porcentaje2">
+              <p><a href="retratos.html">Retratos</a></p>
+            </article>
+          </div>
+
+        </section>
+
+      </section>
+
+      <footer>
+        <div class="contenedorFoot">
+
+          <div id="contacto">
+            <article id="contactos">
+            	<p>
+	            	<h1>Contacto</h1>
+	                <h4><a href="mailto:alvaro.morales.a@gmail.com">Alvaro.Morales.a@gmail.com</a></h4>
+	                <h4>Linderos 3704 - Arica - Chile</h4>
+	                <h4><a href="callto:+56997835555">97835555</a></h4>
+           		</p>
+            </article>
+          </div>
+
+          <div id="termino">
+            <article id="terminos">
+            	<p>
+              		<h1>Términos</h1>
+                	<h4>Nuestros articulos y otros recursos son gratuitos.</h4>
+                </p>
+            </article>
+          </div>
+
+          <div id="redesSociales">
+            <article id="redes">
+              <p><h1>Redes Sociales</h1>
+                <h4>Comparte en nuestras redes sociales</h4>
+                <img src="res/img/Facebook.jpg" alt=""><a href="https://www.facebook.com">Facebook</a>
+                <img src="res/img/twitter.jpg" alt=""><a href="https://www.twitter.com">Twitter</a>
+                <img src="res/img/inkedin.jpg" alt=""><a href="https://www.linkedin.com">Linkedin</a>
+              </p>
+            </article>
+          </div>
+
+          <div id="derechos">
+            <article id="dere">
+              <p><h1>Derechos</h1>
+                <h4>Alvaro Morales &copy; 2017</h4></p>
+            </article>
+          </div>
+
+        </div>
+
+      </footer>
+
+    </div>
+
+  </body>
+
 </html>
